@@ -3,6 +3,9 @@ source $HOME/.zplug/init.zsh
 # To manage zplug itself like other packages
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
+# To avoid having VIM mode in the shell (when $EDITOR is set to vim)
+set -o emacs
+
 # Plugins from oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
@@ -20,8 +23,7 @@ zplug "b4b4r07/enhancd", use:init.sh
 
 # Theme
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme
-SPACESHIP_VI_MODE_INSERT="[vi mode enabled]"
-#SPACESHIP_TIME_SHOW="true"
+SPACESHIP_TIME_SHOW="true"
 #SPACESHIP_BATTERY_SHOW="always"
 #SPACESHIP_NODE_SHOW="false"
 #SPACESHIP_TIME_COLOR="red"
