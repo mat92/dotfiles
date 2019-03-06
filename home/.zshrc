@@ -64,11 +64,14 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-# This needs to come before source oh-my-zsh
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
+
+# this needs to be after oh-my-zsh
+#autoload -U compinit
+compinit
 
 # User configuration
 
