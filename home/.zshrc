@@ -15,24 +15,16 @@ zplug "andsens/homeshick", use:"homeshick.sh", defer:0
 zplug "andsens/homeshick", use:"completions", defer:2
 
 # Syntax highlighting for commands, load last
+# https://github.com/zsh-users/zsh-syntax-highlighting
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
-
-zplug "b4b4r07/emoji-cli", on:"stedolan/jq", defer:2
-zplug "stedolan/jq", from:gh-r, as:command, rename-to:jq
-zplug "b4b4r07/enhancd", use:init.sh
 
 # Theme
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme
 SPACESHIP_TIME_SHOW="true"
-#SPACESHIP_BATTERY_SHOW="always"
-#SPACESHIP_NODE_SHOW="false"
-#SPACESHIP_TIME_COLOR="red"
-#SPACESHIP_USER_SHOW="always"
-#SPACESHIP_DIR_SHOW="true"
-#SPACESHIP_NODE_SHOW="true"
-#SPACESHIP_DIR_TRUNC_REPO="false"
-#SPACESHIP_NODE_PREFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX "
-#spaceship_vi_mode_disable
+SPACESHIP_TIME_COLOR="red"
+SPACESHIP_USER_SHOW="always"
+SPACESHIP_DIR_SHOW="true"
+SPACESHIP_DIR_TRUNC_REPO="false"
 
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
