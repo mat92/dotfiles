@@ -1,3 +1,15 @@
+# Commands
 alias ll="ls -laph"
 alias l="ls -lph"
 alias cd="cd -P"
+
+# Files
+alias aliases="vim ~/.aliases"
+alias zshrc="vim ~/.zshrc"
+alias vimrc="vim ~/.vimrc"
+
+# Colorful greps
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+alias pcregrep="egrep --color=auto"
