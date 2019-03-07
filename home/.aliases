@@ -13,3 +13,7 @@ alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 alias pcregrep="egrep --color=auto"
+
+# jsparrow alias
+alias jsp-refactor="mvn eu.jsparrow:jsparrow-maven-plugin:1.1.0-SNAPSHOT:refactor"
+alias jsp-refactor-debug="mvnDebug eu.jsparrow:jsparrow-maven-plugin:1.1.0-SNAPSHOT:refactor"
