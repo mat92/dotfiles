@@ -4,7 +4,7 @@ source $HOME/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # To avoid having VIM mode in the shell (when $EDITOR is set to vim)
-set -o emacs
+bindkey -e
 
 # Plugins from oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
@@ -42,3 +42,19 @@ if ! zplug check --verbose; then
 fi
 
 zplug load --verbose
+
+# History Tweaks
+#
+# The main idea here is to avoid having a bunch of duplicates.
+# Additionally, the history size is increased.
+#
+# See http://zsh.sourceforge.net/Doc/Release/Options.html
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+export HISTFILE=~/.zsh_history # Required when using zplug
+export HISTSIZE=10000
+export SAVEHIST=10000
+setopt share_history
