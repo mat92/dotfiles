@@ -9,6 +9,7 @@ bindkey -e
 # Plugins from oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
+zplug 'plugins/colored-man-pages', from:oh-my-zsh
 
 # Homeshick
 zplug "andsens/homeshick", use:"homeshick.sh", defer:0
@@ -20,11 +21,11 @@ zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 
 # Theme
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme
-SPACESHIP_TIME_SHOW="true"
-SPACESHIP_TIME_COLOR="red"
-SPACESHIP_USER_SHOW="always"
-SPACESHIP_DIR_SHOW="true"
-SPACESHIP_DIR_TRUNC_REPO="false"
+#SPACESHIP_TIME_SHOW="true"
+#SPACESHIP_TIME_COLOR="red"
+#SPACESHIP_USER_SHOW="always"
+#SPACESHIP_DIR_SHOW="true"
+#SPACESHIP_DIR_TRUNC_REPO="false"
 
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
