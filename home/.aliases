@@ -17,3 +17,7 @@ alias pcregrep="egrep --color=auto"
 # jsparrow alias
 alias jsp-refactor="mvn eu.jsparrow:jsparrow-maven-plugin:1.1.0-SNAPSHOT:refactor"
 alias jsp-refactor-debug="mvnDebug eu.jsparrow:jsparrow-maven-plugin:1.1.0-SNAPSHOT:refactor"
+
+# colored l and ls
+alias ls="ls --color=tty"
+alias l="ls -lpha"
